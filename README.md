@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### 🌤️ Weather App (Flutter)
 
 A modern Weather Application built using Flutter that provides real-time weather information and a
@@ -51,3 +52,5 @@ Humidity, wind speed
 ![Dark Theme](images/home_dark.png)
 ![Splash](images/splash.png)
 ![Next7days](images/next7days.png)
+=======
+>>>>>>> 7374fb9 (Update README locally)

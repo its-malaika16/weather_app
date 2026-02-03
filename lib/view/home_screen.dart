@@ -82,7 +82,7 @@ class _WeatherAppHomeScreenState extends ConsumerState<WeatherAppHomeScreen> {
     String imageUrl = iconPath.isNotEmpty ? "https:$iconPath" : "";
 
     Widget imageWidgets = imageUrl.isNotEmpty
-        ? Image.network(imageUrl, height: 200, width: 200, fit: BoxFit.cover)
+        ? Image.network(imageUrl, height: 150, width: 150, fit: BoxFit.cover)
         : SizedBox();
 
     return Scaffold(
@@ -157,11 +157,11 @@ class _WeatherAppHomeScreenState extends ConsumerState<WeatherAppHomeScreen> {
                   children: [
                     Text(
                       "$city${country.isNotEmpty ? ',$country' : ''}",
-                      maxLines: 1,
+                      maxLines: 2,
                       textAlign: TextAlign.center,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
-                        fontSize: 40,
+                        fontSize: 35,
                         color: Theme.of(context).colorScheme.secondary,
                         fontWeight: FontWeight.w400,
                       ),
@@ -391,9 +391,10 @@ class _WeatherAppHomeScreenState extends ConsumerState<WeatherAppHomeScreen> {
                                     padding: EdgeInsets.all(8),
                                     decoration: BoxDecoration(
                                       color: isCurrentHour
-                                          ? Colors.orangeAccent
+                                          ? Colors.lightBlueAccent
                                           : Colors.black38,
                                       borderRadius: BorderRadius.circular(40),
+                                      border: Border.all(color: Theme.of(context).colorScheme.secondary, width: 1.5),
                                     ),
                                     child: Column(
                                       mainAxisAlignment:

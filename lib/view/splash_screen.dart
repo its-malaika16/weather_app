@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
       child: Column(
         children: [
           Center(
-            child: Text("Discover The\nWeather in your city",
+            child: Text("Know the Weather Before You Step Out",
               textAlign: TextAlign.center,
               style: TextStyle(
               fontSize: 32,
@@ -58,7 +58,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Spacer(),
 
           Center(
-            child: Text("Get to know your weather maps and forecasts",
+            child: Text("Daily forecasts, live conditions, and smart weather updates for your city.",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 17,
@@ -70,7 +70,7 @@ class _SplashScreenState extends State<SplashScreen> {
           Padding(padding: EdgeInsets.only(top: 30),
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: buttonColor,
+              backgroundColor: Colors.lightBlueAccent,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
 
